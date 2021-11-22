@@ -1,0 +1,6 @@
+from lambda_function import handler
+
+sqs_event = {'Records': [{'messageId': '2e4035c1-5e23-4829-a056-60a2da65a370', 'receiptHandle': 'AQEB9EkMzptlritp6my9VhJLzMDR3dHEfhRcLM1eP+U4gfqWXBtF/J4Hv22CBITBlPCc2ksZ9yXrmDpWcdSpresJwk3ixG3ti7zsChDkm9JnOnixVAj6uAv+3HXZxBavAnfzXuueJNvUost/eoZe6dGDHcTRLGRbYVXS5J77h2Vwg99EFdf8Xgc7XEtjjPKDPsV9Xd6jw3vCMyI1FQIo7Tq3TnbP9C6U/Kmg9EXcPRSrf/NFXqtuX3sXMD5mvi/a2wrLuXAltjAJOFQShTLpYMt5j0ny+Lo9DFAOT/YW2jy7NiKAGCLsFw0w209rmaNf9Wj2UAiVadtJ10DRFhxe2WxBCCupFZOkKgBmOxa9F1Udv5UByE1oQeGEeKalj4eFvCMytSriL5f2gqOnhQHtZpQznw==', 'body': '{\n    "url": "https://jsonplaceholder.typicode.com/posts"\n}', 'attributes': {'ApproximateReceiveCount': '7', 'SentTimestamp': '1637611006835', 'SenderId': '113575749776', 'ApproximateFirstReceiveTimestamp': '1637611006835'}, 'messageAttributes': {}, 'md5OfBody': 'ae4df40af0d59fece677f11a4ca2d154', 'eventSource': 'aws:sqs', 'eventSourceARN': 'arn:aws:sqs:us-east-1:113575749776:urls-queue', 'awsRegion': 'us-east-1'}]}
+
+if __name__ == '__main__':
+    handler(sqs_event, None)
