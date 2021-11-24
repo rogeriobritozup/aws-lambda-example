@@ -3,6 +3,9 @@ import json
 
 '''
 {
+    "url": "https://jsonplaceholder.typicode.com/posts"
+}
+{
     "Records": [
         {
             "messageId": "efaad907-22ed-4a58-a9de-5ac94f9aa0bc",
